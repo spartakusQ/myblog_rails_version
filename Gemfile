@@ -47,8 +47,12 @@ end
 
 gem 'devise'
 
-group :test, :development do
-  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
-  gem 'capybara'
-  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+group :development, :test do
+  gem 'byebug'
+  gem 'capybara', '~> 2.5'
+  gem 'rspec-rails', '~> 3.4'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.0', require: false
 end
