@@ -47,7 +47,8 @@ end
 
 gem 'devise'
 
-group :test, :development do  
+group :test, :development do
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'capybara'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
