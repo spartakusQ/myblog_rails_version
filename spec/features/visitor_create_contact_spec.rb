@@ -18,5 +18,7 @@ feature "Contact creation" do
     fill_in :contact_message, :with => 'lalalala'
     #нажать на кнопку send message
     click_button 'Send message'
+
+    expect(page).to have_content 'Thanks!'
   end
 end
